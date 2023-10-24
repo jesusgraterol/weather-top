@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Charset -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Weather</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+
+  </head>
+  <body>
+
+    <!-- App Container -->
+    <div id="app_container">
+
+      <!-- App Inner Container -->
+      <div id="app_inner_container">
+
+        <!-- Loader-->
+        <div id="app_loader"><div class="spinner"><div></div><div></div><div></div><div></div></div></div>
+
+        <!-- App -->
+        <div id="app">
+
+          <div class="content-fill"></div>
+
+          <!-- App Content-->
+          <div id="app_content">
+  
+            <form id="location_form" novalidate>
+              <input type="text" name="location" id="location_input" autocomplete="off">
+            </form>
+            
+            <p id="location"></p>
+            <p id="date"></p>
+  
+            <p id="temperature"></p>
+            <p id="temperature_description"></p>
+  
+            <!-- Meta Data -->
+            <div id="bottom_grid">
+              <div class="grid-item">
+                <p id="feels_like"></p>
+                <p>Feels Like</p>
+              </div>
+              <div class="grid-item">
+                <p id="humidity"></p>
+                <p>Humidity</p>
+              </div>
+              <div class="grid-item">
+                <p id="chance_of_rain"></p>
+                <p>Chance of Rain</p>
+              </div>
+              <div class="grid-item">
+                <p id="wind_speed"></p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+  
+          </div>
+
+          <div class="content-fill"></div>
+
+        </div>
+
+
+      <!-- Toastr -->
+      <div id="toastr"><span class="md-icon" id="toastr_icon"></span> <p id="toastr_text"></p></div>
+
+
+      </div>
+
+
+    </div>
+
+  </body>
+
+</html>

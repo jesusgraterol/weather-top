@@ -1,0 +1,307 @@
+/***********
+ * IMPORTS *
+ ***********/
+ 
+
+/* Sanitizer */
+@import url("modules/sanitizer.css");
+
+/* Font */
+@import url("modules/font.css");
+
+/* Material Icons */
+@import url("modules/material-icons.css");
+
+/* Utilities */
+@import url("modules/utilities.css");
+
+/* Animations */
+@import url("modules/animations.css");
+
+/* Spinner */
+@import url("modules/spinner.css");
+
+/* Toastr */
+@import url("modules/toastr.css");
+
+
+
+
+
+
+
+
+/***********
+ * GLOBALS *
+ ***********/
+:root {
+    --primary-color: #000000;
+    --accent-color: #161515;
+
+    --text-color: #312e2e;
+    --success-color: #0f766e;
+    --error-color: #B71C1C;
+    --light-text-color: #4e4949;
+
+    --app-background-color: #f7f1f1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************
+ * APP BODY *
+ ************/
+body {
+    font-family: "Montserrat", "Roboto", sans-serif;
+    background-color: var(--app-background-color);
+}
+
+
+
+
+
+
+
+/*****************
+ * APP CONTAINER *
+ *****************/
+#app_container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+/***********************
+ * APP INNER CONTAINER *
+ ***********************/
+#app_inner_container {
+  flex: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:15px;
+}
+
+
+
+
+#app_loader { 
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/*******
+ * APP *
+ *******/
+#app {
+  animation: fadein;
+  animation-duration: 0.5s;
+}
+
+.content-fill {
+  flex: 1;
+}
+
+
+/***************
+ * APP CONTENT *
+ ***************/
+#app_content {
+  color:white;
+  text-align: center;
+}
+
+
+/* Input */
+#app_content input {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font: 1rem;
+  color:white;
+  font-weight: bold;
+  /* border: 1px solid white; */
+  border-radius: 5px;
+  /* opacity: 0.4; */
+}
+#app_content input:active,
+#app_content input:focus {
+  outline: none;
+}
+
+
+
+
+/* Text Content */
+#app_content #location { 
+  font-size: 2rem;
+  margin: 50px 0 10px 0;
+}
+
+#app_content #date {
+  font-size: 1.2rem;
+}
+
+#app_content #temperature {
+  font-size: 5rem;
+  margin: 100px 0 0 0;
+  font-weight: 900;
+}
+
+#app_content #temperature_description {
+  font-size:0.9rem;
+  font-weight:bold;
+}
+
+
+
+#app_content #bottom_grid {
+  margin-top: 100px;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 20px;
+}
+
+#app_content #bottom_grid .grid-item {
+
+}
+
+#app_content #bottom_grid .grid-item p:first-child {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/****************************
+ * RESPONSIVE MEDIA QUERIES *
+ ****************************/
+
+
+
+/*
+ * DEVICE: Desktops
+ * SCREEN: 1281px to higher resolution desktops
+ */
+@media (min-width: 1281px) {
+
+
+
+}
+ 
+ 
+/*
+ * DEVICE: Laptops, Desktops
+ * SCREEN: B/w 1025px to 1280px
+ */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+}
+ 
+ 
+/*
+ * DEVICE: Tablets, Ipads (portrait)
+ * SCREEN: B/w 768px to 1024px
+ */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+}
+ 
+ 
+/*
+ * DEVICE: Tablets, Ipads (landscape)
+ * SCREEN: B/w 768px to 1024px
+ */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+
+
+}
+ 
+ 
+/*
+ * DEVICE: Low Resolution Tablets, Mobiles (Landscape)
+ * SCREEN: B/w 481px to 767px
+ */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+ 
+ 
+/*
+ * DEVICE: Most of the Smartphones Mobiles (Portrait)
+ * SCREEN: 480px to lower resolution mobiles
+ */
+@media (max-width: 480px) {
+  #app_content input {
+    width: 250px;
+  }
+  #app_content #location { 
+    font-size: 1.7rem;
+    margin: 35px 0 10px 0;
+  }
+  #app_content #date {
+    font-size: 1rem;
+  }
+  
+  #app_content #temperature {
+    font-size: 3.5rem;
+    margin: 50px 0 0 0;
+  }
+  
+  #app_content #temperature_description {
+    font-size:0.8rem;
+  }
+
+  #app_content #bottom_grid {
+    margin-top: 50px;
+  }
+}
