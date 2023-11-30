@@ -6,6 +6,7 @@ This application allows the user to view general weather information for any loc
 
 The key features are:
 
+- Worldwide Coverage
 - Real-Time Updates
 - Accurate Information
 - Cross-Platform Compatibility
